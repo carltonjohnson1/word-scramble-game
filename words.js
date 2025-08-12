@@ -195,5 +195,201 @@ const words = [
  word: "balloon",
  hint: "A rubber object filled with air or gas"
 },
+{
+ word: "banana",
+ hint: "A yellow tropical fruit"
+},
+{
+ word: "pocket",
+ hint: "A small fabric pouch in clothes"
+},
+{
+ word: "candle",
+ hint: "Wax stick that gives light"
+},
+{
+ word: "kitten",
+ hint: "A young cat"
+},
+{
+ word: "spoon",
+ hint: "Utensil used for eating soup"
+},
+{
+ word: "bottle",
+ hint: "A container for liquids"
+},
+{
+ word: "basket",
+ hint: "A container for carrying items"
+},
+{
+ word: "castle",
+ hint: "A large fortified building"
+},
+{
+ word: "plane",
+ hint: "A vehicle that flies in the sky"
+},
+{
+ word: "lemon",
+ hint: "A sour yellow fruit"
+},
+{
+ word: "clock",
+ hint: "Device for measuring time"
+},
+{
+ word: "beach",
+ hint: "Sandy shore by the sea"
+},
+{
+ word: "sheep",
+ hint: "Farm animal with wool"
+},
+{
+ word: "plant",
+ hint: "A living thing that grows in soil"
+},
+{
+ word: "glass",
+ hint: "Transparent material for windows"
+},
+{
+ word: "heart",
+ hint: "Organ that pumps blood"
+},
+{
+ word: "chair",
+ hint: "Furniture for sitting"
+},
+{
+ word: "stone",
+ hint: "Small piece of rock"
+},
+{
+ word: "bread",
+ hint: "Baked food made from flour"
+},
+{
+ word: "storm",
+ hint: "Bad weather with wind and rain"
+},
+{
+ word: "apple",
+ hint: "A round red or green fruit"
+},
+{
+ word: "queen",
+ hint: "Female ruler of a country"
+},
+{
+ word: "snake",
+ hint: "A long, legless reptile"
+},
+{
+ word: "grape",
+ hint: "Small round fruit on a vine"
+},
+{
+ word: "shoes",
+ hint: "Footwear worn outdoors"
+},
+{
+ word: "mouse",
+ hint: "Small rodent or computer device"
+},
+{
+ word: "cloud",
+ hint: "Water vapor seen in the sky"
+},
+{
+ word: "brush",
+ hint: "Tool with bristles for cleaning"
+},
+{
+ word: "truck",
+ hint: "Large vehicle for transporting goods"
+},
+{
+ word: "train",
+ hint: "Connected vehicles that run on rails"
+},
+{
+ word: "camel",
+ hint: "Desert animal with humps"
+},
+{
+ word: "coins",
+ hint: "Small metal money"
+},
+{
+ word: "knife",
+ hint: "Sharp tool for cutting"
+},
+{
+ word: "towel",
+ hint: "Cloth used for drying"
+},
+{
+ word: "drum",
+ hint: "Percussion instrument"
+},
+{
+ word: "soap",
+ hint: "Used for washing and cleaning"
+},
+{
+ word: "door",
+ hint: "Panel that opens to enter a room"
+},
+{
+ word: "fish",
+ hint: "Animal that lives in water"
+},
+{
+ word: "milk",
+ hint: "White drink from cows"
+},
+{
+ word: "bike",
+ hint: "Two-wheeled vehicle you pedal"
+},
+{
+ word: "book",
+ hint: "Pages with written or printed words"
+},
+{
+ word: "flag",
+ hint: "Cloth symbol for a country"
+},
+{
+ word: "moon",
+ hint: "Earth’s natural satellite"
+},
+{
+ word: "ring",
+ hint: "Jewelry worn on a finger"
+},
+{
+ word: "seed",
+ hint: "Part of a plant that can grow"
+},
+{
+ word: "nest",
+ hint: "Home built by birds"
+},
+{
+ word: "rope",
+ hint: "Strong cord made of fibers"
+},
+{
+ word: "star",
+ hint: "Glowing ball in space"
+},
+{
+ word: "egg",
+ hint: "Laid by birds and reptiles"
+}
 
 ]
