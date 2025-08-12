@@ -1,0 +1,215 @@
+
+/* CSS RESETS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Google Fonts */
+
+@font-face {
+    font-family: "Poppins Regular", sans-serif;
+    src: url("Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: "Poppins Medium", sans-serif,;
+    src: url("Poppins-Medium.ttf");
+}
+@font-face {
+    font-family: "Poppins Semi-bold", sans-serif,;
+    src: url("Poppins-SemiBold.ttf");
+}
+
+
+
+/* ROOT */
+
+:root {
+
+    /* COLORS */
+    --white: #fff;
+    --black: #000;
+    --primary-colour: #5372F0;
+    --secondary-colour: #ccc;
+    --input-colour: #aaa;
+    --accent-colour: #6C757D;
+    --button-bg: #5372F0;
+
+
+    /* FONT SIZES */
+    --font-size-s: 0.875rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.5rem;
+    --font-size-l: 2.25rem;
+    --font-size-xl: 3.635rem;
+    --font-size-xxl: 4.24rem;
+  
+    /* FONT WEIGHT */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+ 
+    /* BORDER RADIUS */
+    --border-radius-xs: 4px;
+    --border-radius-s: 8px;
+    --border-radius-m: 20px;
+    --border-radius-l: 32px;
+    --border-radius-circle: 50%;
+
+    /* SITE MAX WIDTH */
+    --site-max-width: 1240px;
+    
+}
+
+/* GENERAL CSS */
+
+
+body {
+    font-family: "Poppins Regular", sans-serif;
+     font-size: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+     background: var(--primary-colour)
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+ 
+
+/* IMAGES */
+
+img {
+    width: 100%;
+}
+
+
+
+
+/* LINKS */
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* GENERAL STYLING */
+
+.container {
+    width: 450px;
+    border-radius: 7px;
+    background: #FFF;
+}
+
+.container h1 {
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-medium);
+    padding: 18px 25px;
+    border-bottom: 1px solid var(--secondary-colour);
+}
+
+.container .content {
+    margin: 25px 20px 35px; 
+}
+
+.content .word {
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-medium);
+    text-align: center;
+    letter-spacing: 24px;
+    margin-right: -24px;
+    text-transform: uppercase;
+}
+
+.content .details {
+    margin: 25px 0 20px;
+}
+
+.details p {
+    font-size: var(--font-size-n);
+    margin-bottom: 10px;
+}
+
+.details p b {
+    font-weight: var(--font-weight-medium);
+}
+
+.content input {
+    width: 100%;
+    height: 60px;
+    outline: none;
+    font-size: var(--font-size-n);
+    padding: 0 16px;
+    border-radius: 5px;
+    border: 1px solid var(--input-colour);
+}
+
+.content .buttons {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.buttons button {
+    border: none;
+    outline: none;
+    padding: 15px 0;
+    font-size: var(--font-size-n);
+    border-radius: var(--border-radius-xs);
+    width: calc(100% / 2 - 8px);
+    color: var(--white);
+    cursor: pointer;
+
+}
+
+.buttons .refresh-word{
+    background: var(--accent-colour);
+}
+
+.buttons .check-word {
+    background: var(--button-bg);
+}
+
+
+
+/* RESPONSIVE */
+
+/* (DESKTOP)RESPONSIVE ABOVE 1024PX  */
+
+@media screen and (min-width: 1024px) {
+
+
+}
+
+/* (TABLET) RESPONSIVE BETWEEN 769 - 1023PX */
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+
+
+}
+
+
+       
+/* (MOBILE) RESPONSIVE BELOW FOR MAX WIDTH 768PX */
+
+@media screen and (max-width: 768px) {
+
+
+
+}
+
+    
+
+
+
+
