@@ -3,9 +3,29 @@ hintText = document.querySelector(".hint span"),
 timeText = document.querySelector(".time b"),
 inputField = document.querySelector("input"),
 refreshBtn = document.querySelector(".refresh-word"),
-checkBtn = document.querySelector(".check-word");
+checkBtn = document.querySelector(".check-word"),
+hintBtn = document.querySelector(".hint-button"),
+hintElement = document.querySelector(".hint"),
+notification = document.querySelector("#notification"),
+scoreDisplay = document.querySelector("#score-display");
 
-let correctWord, timer; 
+let correctWord, timer, score = 0; 
+
+// Function to update score display
+const updateScore = () => {
+    scoreDisplay.textContent = `Score: ${score}`;
+}
+
+// Function to show notifications
+const showNotification = (message, type) => {
+    notification.textContent = message;
+    notification.className = `notification show ${type}`;
+    
+    // Auto-hide after 3 seconds
+    setTimeout(() => {
+        notification.classList.remove('show');
+    }, 3000);
+}
 
 const initTimer = maxTime => {
     clearInterval(timer);
@@ -15,7 +35,7 @@ const initTimer = maxTime => {
             return timeText.innerText = maxTime;
         }
         clearInterval(timer);
-        alert(`Time off! ${correctWord.toUpperCase()} is a correct word`);
+        showNotification(`Time's up! ${correctWord.toUpperCase()} is the correct word`, 'warning');
         initGame(); // calling initGame function, so the game restarts
     }, 1000);
 }
@@ -35,21 +55,39 @@ const initGame = () => {
     inputField.value = "";
     inputField.setAttribute("maxlength", correctWord.length); // setting input maxlength attr value to word length
     console.log(randomObj);
-
+    
+    // Hide hint when new word is loaded
+    hintElement.classList.add("hidden");
+    
+    // Update score display
+    updateScore();
 }
 initGame();
 
 const checkWord = () => {
     let userWord = inputField.value.toLowerCase(); // getting user value
-    if(!userWord) return alert("Please enter a word to check"); // if user didn't etner anything
+    if(!userWord) {
+        showNotification("Please enter a word to check", 'error');
+        return;
+    }
 
     // if users word does not match the correct word
-    if(userWord !== correctWord) return alert(`Oops! ${userWord} is not a correct word`);
+    if(userWord !== correctWord) {
+        showNotification(`Oops! ${userWord} is not a correct word`, 'error');
+        return;
+    }
 
     // if users word matches the correct word
-    alert(`Congrats! ${userWord.toUpperCase()} is a correct word`);
+    showNotification(`Congrats! ${userWord.toUpperCase()} is a correct word`, 'success');
+    score++; // Increment score
+    updateScore(); // Update score display
     initGame();
 }
 
 refreshBtn.addEventListener("click", initGame);
 checkBtn.addEventListener("click", checkWord);
+
+// Add hint button functionality
+hintBtn.addEventListener("click", () => {
+    hintElement.classList.toggle("hidden");
+});
