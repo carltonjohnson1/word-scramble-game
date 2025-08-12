@@ -73,12 +73,12 @@ const checkWord = () => {
 
     // if users word does not match the correct word
     if(userWord !== correctWord) {
-        showNotification(`Oops! ${userWord} is not a correct word`, 'error');
+        showNotification(`Nope! ${userWord} is not the correct word`, 'error');
         return;
     }
 
     // if users word matches the correct word
-    showNotification(`Congrats! ${userWord.toUpperCase()} is a correct word`, 'success');
+    showNotification(`Congratulations! ${userWord.toUpperCase()} is a correct word`, 'success');
     score++; // Increment score
     updateScore(); // Update score display
     initGame();
